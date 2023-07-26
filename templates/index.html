@@ -1,0 +1,21 @@
+<!-- Copyright (c) 2023, Francisco Ruiz -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Comparison</title>
+</head>
+<body>
+    <h1>Text Comparison</h1>
+    <p>Enter two texts below and I will compare them.</p>
+    <form action="/" method="post">
+        <textarea name="text1" cols="100" rows="20" autogrow></textarea>
+        <br>
+        <textarea name="text2" cols="100" rows="20" autogrow></textarea>
+        <br>
+        <input type="submit" value="Compare">
+    </form>
+
+    <p>Resultado: <span id="result">{{ result }}</span></p>
+</body>
+</html>
