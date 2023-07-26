@@ -9,7 +9,7 @@ import openai
 import streamlit as st
 
 dotenv.load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.title("Comparador de Contratos")
 st.write('''A continuación introduzca el texto de los contratos que desee comparar,
