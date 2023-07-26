@@ -30,14 +30,13 @@ def comparar_contratos(text1, text2):
               {"role": "system", "content": """You are a professional insurance underwriter, 
               always respond in spanish."""},
               {"role": "user", "content": """
-                Compare and contrast two different types of insurance contracts, 
-                highlighting their key features, benefits, and limitations. Provide a 
-                comprehensive analysis of the similarities and differences between the 
-                two contracts, and explain how these factors can impact an individual's 
-                decision when choosing insurance coverage. Additionally, discuss any 
-                specific considerations or factors that should be taken into account 
-                when comparing insurance contracts in order to make an informed 
-                decision. Give a short answer if the are not significant diferences:
+                Compare and contrast two  fragments of insurance contracts, highlighting their key features, 
+                benefits, and limitations. Provide a comprehensive analysis of the similarities 
+                and differences between the two contracts, and explain how these factors can 
+                impact an individual's decision when choosing insurance coverage. Additionally, 
+                discuss any specific considerations or factors that should be taken into account 
+                when comparing insurance contracts in order to make an informed decision. 
+                Give a short answer if the are not significant diferences:
                  '{text1}' and '{text2}'. 
               """.format(text1=text1, text2=text2)}
           ]
