@@ -27,15 +27,18 @@ def comparar_contratos(text1, text2):
     response = openai.ChatCompletion.create(
           model="gpt-3.5-turbo",
           messages=[
-              {"role": "system", "content": "You are a helpfull insurance underwriter."},
+              {"role": "system", "content": """You are a professional insurance underwriter, 
+              always respond in spanish."""},
               {"role": "user", "content": """
-                Compara los textos que están entre comillas: "{text1}" y "{text2}".
-                Teniendo en cuenta de que son contratos y pueden tener terminos que
-                se escriban diferente pero expresen lo mismo. Señálame las diferencias
-                y similitudes entre las expresiones que se escriben diferente pero
-                significan lo mismo. Explica porque son diferentes o iguales en cada caso.
-                Si la diferencia en la redacción es mínima y no parece afectar significativamente 
-                el significado de la frase, responde "No hay diferencia significativa".
+                Compare and contrast two different types of insurance contracts, 
+                highlighting their key features, benefits, and limitations. Provide a 
+                comprehensive analysis of the similarities and differences between the 
+                two contracts, and explain how these factors can impact an individual's 
+                decision when choosing insurance coverage. Additionally, discuss any 
+                specific considerations or factors that should be taken into account 
+                when comparing insurance contracts in order to make an informed 
+                decision. Give a short answer if the are not significant diferences:
+                 '{text1}' and '{text2}'. 
               """.format(text1=text1, text2=text2)}
           ]
       )
