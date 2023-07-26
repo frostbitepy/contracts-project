@@ -16,8 +16,8 @@ st.write('''A continuación introduzca el texto de los contratos que desee compa
           cada uno en su respectivo campo, luego presione el botón "Comparar" y 
          aguarde por la respuesta de la IA. Este proceso podría demorar unos minutos.''')
 st.caption('''Por el momento la aplicación se encuentra limitada a 1000 palabras en cada campo, 
-           por lo que podría utilizarse para comparar exclusivamente las secciones de exclusión 
-           o coberturas de los contratos.''')
+           por lo que podría utilizarse para comparar las secciones de exclusión o coberturas 
+           de los contratos, por secciones.''')
 
 text1 = st.text_area("Texto del 1er Contrato", height=200)
 text2 = st.text_area("Texto del 2do Contrato", height=200)
