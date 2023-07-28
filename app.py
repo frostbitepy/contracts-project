@@ -39,8 +39,8 @@ def comparar_contratos(text1, text2):
                 Give a short answer if the are not significant diferences:
                  '{text1}' and '{text2}'. 
               """.format(text1=text1, text2=text2)}
-          ]
-          temperature=0.1
+          ],
+          temperature=0.2
       )
     return response["choices"][0]["message"]["content"] + "\n Total de Tokens utilizados en esta consulta: " +  str(response["usage"]["total_tokens"])
 
