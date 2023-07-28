@@ -40,7 +40,7 @@ def comparar_contratos(text1, text2):
                  '{text1}' and '{text2}'. 
               """.format(text1=text1, text2=text2)}
           ]
-          temperatur=0.1
+          temperature=0.1
       )
     return response["choices"][0]["message"]["content"] + "\n Total de Tokens utilizados en esta consulta: " +  str(response["usage"]["total_tokens"])
 
